@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-image: linear-gradient(to right top, #000000, #0f0a0d, #181217, #1d1820, #211f2a, #2b2e3f, #313f56, #33526c, #377495, #3199bc, #1fc1e0, #00e9ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  h1 {
+    color: white;
+    font-family: cursive;
+  }
+
+  .scrollToTop {
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position: fixed;
+    top: 75px;
+    right: 40px;
+    display: none;
+    background: url('arrow_up.png') no-repeat 0px 20px;
+  }
+
+  .scrollToTop:hover {
+    text-decoration: none;
+  }
+
+  .btn {
+    color: black;
+    background-color: whitesmoke;
+  }
+
+  footer {
+    background-color: #777;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .d-flex button {
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+
+  .txtbox {
+    padding: 1px;
+  }
+ 
+</style>
+
+<body>
+
+  <div class="container">
+    <h1>JQUERY EXERCISES</h1>
+    <!-- EXERCISE 11 -->
+    <p class="qoute" style="color: black;">
+      Rise above them all. Look back only to remember. 
+      Look down only to help. And always look up to move forward.
+    </p>
+    <button class="btn-p">Animate</button>
+
+    <!-- EXERCISE 3 --> <!-- EXERCISE 9 -->
+    <div class="card m-4">
+      <table class="table table-hover table-dark table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btnchange">Change Table Color</button>
+
+    <!-- EXERCISE 2 -->
+    <div class="d-flex flex-row mt-5">
+      <form action="#" method="post">
+        <div data-role="fieldcontain" class="ui-field-contain">
+          <fieldset data-role="controlgroup">
+            <input type="checkbox" id="accept" name="accept" class="custom" data-mini="true" />
+            <label for="accept">I Accept</label>
+            <input type="submit" id="proceed" name="proceed" value="Proceed" disabled />
+          </fieldset>
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- EXERCISE 10 -->
+    <div class="d-flex flex-row mb-5">
+      <input class="num">
+    </div>
+
+    <!-- EXERCISE 5 -->
+    <div class="d-flex flex-row">
+      <button class="add-option">Add</button>
+      <select id="ddlList" class="ml-2 mr-2">
+      </select>
+      <!-- EXERCISE 6 -->
+      <button class="remove-option">Remove</button>
+    </div>
+
+    <!-- EXERCISE 4 -->
+    <div class="d-flex flex-row mt-5">
+      <input type="text" name="text-box" class="txtbox" maxlength="15">
+    </div>
+    <div class="d-flex flex-row" style="margin-top: -25px;">
+      <p><span class="r-chars">15</span>Character(s) remaining</p>
+    </div>
+
+    <!-- EXERCISE 7 -->
+    <div class="d-flex flex-row mt-2">
+      <p class="p"></p>
+    </div>
+
+    <!-- EXERCISE 8 -->
+    <div class="d-flex flex-row mt-5">
+      <button class="myBtn">Button</button>
+    </div>
+
+    <!-- exercise 12 -->
+    <div class="d-flex flex-row mt-5">
+      <button class="btn-slideUp p-1 mr-5">Up</button><br>
+      <button class="btn-slideLeft p-1">Left</button><br>
+    </div>
+    <div class="d-flex flex-row mt-2">
+      <button class="btn-slideDown p-1 mr-4">Down</button><br>
+      <button class="btn-slideRight p-1">Right</button><br>
+    </div>
+    <div class="d-flex flex-row" style="margin-top: 70px;">
+      <div class="block" style="background: red; width: 100px; height: 100px; position: absolute;"></div>
+    </div>
+  </div>
+  <footer>
+    <button class="btn">Scroll To Top</button>
+  </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"></script>
+<script>
+
+  $(document).ready(function () {
+    // exercise 1
+    $('.btn').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 800);
+      return false;
+    });
+
+    // exercise2
+    $('#accept').on('click', function () {
+      //check if checkbox is checked 
+      if ($(this).is(':checked')) {
+        $('#proceed').removeAttr('disabled'); //enable input
+      } else {
+        $('#proceed').attr('disabled', true); //disable input
+      }
+    });
+
+    // exercise 3  //EXERCISE 9
+    $('.btnchange').on('click', function () {
+      $('table').removeClass('table-dark').addClass('table-primary');
+    });
+    $('.btnchange').on('dblclick', function () {
+      $('table').removeClass('table-primary').addClass('table-dark');
+    })
+
+    // exercise 4  -----------not yet-----------
+    $('.txtbox').on('keyup', function () {
+      $('.r-chars').text(15 - $(this).val().length);
+    })
+
+
+    // exercise 5
+    $('.add-option').on('click', function () {
+    })
+
+    // exercise 6
+    $('.remove-option').on('click', function () {
+      $("#ddlList option[value='" + $('#ddlList').val() + "']").remove();
+    })
+    $('.add-option').on('click', function () {
+      $('#ddlList').append('<option value="' + $('.txtbox').val() + '">' + $('.txtbox').val() + '</option>');
+    })
+
+
+    // exercise 7
+    $(".txtbox").on('keypress', function () {
+      $(".p").text($(this).val());
+    });
+
+
+    // exercise 8
+    $('.myBtn').on ('click', function () {
+      var $this = $(this);
+      $this.toggleClass('.myBtn');
+      if ($this.hasClass('.myBtn')) {
+        $this.text('Button');
+      } else {
+        $this.text('Button Clicked');
+      }
+    });
+
+
+
+    // exercise 10
+    $('.num').on('keyup', function () {
+      this.value = this.value.replace(/[^0-9\.]/g, '')
+    })
+
+
+    // exercise 11
+    $('.btn-p').on('click', function () {
+      $('.qoute').animate({
+        width: '70 %',
+        opacity: '0.4',
+        marginLeft: '0.6 in',
+        fontSize: '3em',
+        borderWidth: '10px',
+      }, 5000)
+    });
+
+
+    // exercise 12
+    $('.btn-slideUp').on('click', function () {
+      $('.block').animate({
+        top: '-=50px'
+      }, 'slow');
+    }),
+      $('.btn-slideDown').on('click', function () {
+        $('.block').animate({
+          top: '+=50px'
+        }, 'slow');
+      }),
+      $('.btn-slideLeft').on('click', function () {
+        $('.block').animate({
+          left: '-=50px'
+        }, 'slow');
+      }),
+      $('.btn-slideRight').on('click', function () {
+        $('.block').animate({
+          left: '+=50px'
+        }, 'slow');
+      })
+
+
+  });
+</script>
+
+</html>
